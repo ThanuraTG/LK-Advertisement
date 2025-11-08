@@ -1,0 +1,151 @@
+.section_footer {
+    padding: 40px 20px 1px;
+    border-top: 2px solid #ff0000;
+    color: rgb(0, 0, 0);
+    background-color: rgb(180, 180, 180);
+}
+
+.head {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr; /* 4 columns */
+    gap: 30px;
+    align-items: flex-start;
+    margin-bottom: 0px;
+}
+
+.logo {
+    margin-left: 100px;
+    img{
+        max-width: 300px;
+    }
+
+}
+
+.information h2,
+.follow h2,
+.contac h2 {
+    font-size: 25px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.information ul,
+.follow ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.information ul li,
+.follow ul li {
+    margin-bottom: 10px;
+}
+
+.information ul li a,
+.follow ul li a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.information ul li a:hover,
+.follow ul li a:hover {
+    color: #000000;
+}
+
+.follow ul li img {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.contac p {
+    margin: 5px 0;
+    font-size: 18px;
+}
+
+.copyright {
+    border-top: 1px solid #ff0000;
+    text-align: center;
+    margin: 0px 10px;
+    padding-top: 1px;
+    font-size: 13px;
+    color: #000000;
+}
+
+
+@media (max-width: 1024px){
+    .head {
+        grid-template-columns: 1.5fr 1fr 1fr 1fr;
+        gap: 10px;
+        text-align: center;
+    }
+    .logo img {
+        max-width: 200px;
+    }
+    .information,
+    .follow,
+    .contac  {
+        text-align: start;
+    }
+}
+@media (max-width: 768px){
+    .head {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        text-align: center;
+    }
+    .logo img {
+        max-width: 200px;
+    }
+    .information,
+    .follow,
+    .contac  {
+        text-align: center;
+    }
+    .information h2,
+    .follow h2,
+    .contac h2 {
+        font-size: 22px;
+    }
+    .information ul li a,
+    .follow ul li a {
+        font-size: 16px;
+    }
+    .contac p {
+        font-size: 16px;
+    }
+}
+@media (max-width: 480px){
+    .head {
+        flex-direction: column;
+        display: flex;
+        padding-left: 30px;
+    }
+    
+    .logo{
+        text-align: center;
+        width: 90%;
+    }
+    .logo img {
+        max-width: 150px;
+        margin-bottom: 0px;
+        text-align: center;
+    }
+    .information, .follow, .contac {
+        text-align: start;
+        margin-top: -20px;
+    }
+    .information ul li a,
+    .follow ul li a {
+        font-size: 14px;
+    }
+    .contac p {
+        font-size: 14px;
+    }
+    .contac{
+        margin-bottom: 20px;
+    }
+}
