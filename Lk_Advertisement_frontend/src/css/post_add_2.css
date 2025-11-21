@@ -1,0 +1,109 @@
+.form_details{
+    display: flex;
+    /* text-align: center; */
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.form_details .signup h1{
+    font-size: 45px;
+    text-align: center;
+    margin-bottom: 30px;
+    span{
+      text-transform: capitalize;
+    }
+}
+.form_details .but button{
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+
+.image-uploader {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.image-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+}
+
+.image-item {
+  position: relative;
+}
+
+.image-container img {
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.remove-btn {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+}
+
+.add-photo {
+  cursor: pointer;
+}
+
+.hidden-input {
+  display: none;
+}
+
+.disabled-box {
+  border: 1px dashed #ccc;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 12px;
+  color: #999;
+}
+.help-text {
+  margin-top: 10px;
+  color: #0074BA;
+}
+.contact_detail input[type="tel"] {
+    width: 50%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #000;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: #000;
+    background-color: rgba(185, 183, 183, 0.605);
+}
+.contact_detail {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.contact_detail .divlabel{
+  display: flex;
+  gap: 15px;
+}
+.contact_detail p {
+  margin: 0;
+}
+/* Two-column layout for last two inputs */
+.contact_detail .two-col {
+  display: flex;
+  flex-direction: column;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+}
+.contact_detail input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
